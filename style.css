@@ -1,0 +1,11 @@
+body{
+    padding: 50px;
+}
+
+.todo__item-name{
+    border: 1px solid black;
+    display: inline-block;
+    width: 100px;
+    padding: 5px;
+    margin: 10px;
+}
