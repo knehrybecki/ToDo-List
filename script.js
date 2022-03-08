@@ -7,8 +7,11 @@ const buy = []
  listItem = () => {
     const listBuy = document.createElement('li')
     listBuy.classList.add('todo__item')
-    listBuy.textContent = inputText.value
-    myList.appendChild(listBuy)  
+
+    buy.forEach((value) => {
+        listBuy.textContent = value.buy
+        myList.appendChild(listBuy)  
+    })
 }
 
 buttonAddItem = () => {
@@ -51,7 +54,7 @@ buttonDeleteAndAcceptedItem()
 
 clickDelete = () =>{
     const deleteButtonItem = document.querySelectorAll('.todo__item-delete')
-
+        
         for (const deleteButtonItems of deleteButtonItem){
             deleteButtonItems.addEventListener("click", (event) => {
                 event.currentTarget.parentElement.parentElement.remove()
