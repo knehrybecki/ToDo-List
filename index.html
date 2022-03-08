@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/reset.css">
     <script src="https://kit.fontawesome.com/b20687152d.js" crossorigin="anonymous"></script>
     <title>ToDo list</title>
 </head>
 <body>
     <div class="main">
+        <h1 class="main__title">Todo List</h1>
         <div class="main__input-todo">
-            <input type="text" value="" class="input-text" required>
+            <input type="text" value="" placeholder="What you need a buy ?" class="input-text" required>
             <button class="add-item">
                 <i class="fa-regular fa-plus"></i>
             </button>
         </div>
-        <div class="main__todo">
+    </div>
+        <div class="todo">
             <ul class="todo__list">
             </ul>
         </div>
-    </div>
     <script src="script.js"></script>
 </body>
 </html>
