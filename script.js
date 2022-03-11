@@ -38,13 +38,13 @@ const createTodoControls = todoItem => {
     acceptedButton.classList.add('todo__item-accepted')
 
     const check = document.createElement('i')
-    check.className.add('fa-solid fa-check')
+    check.classList.add('fa-solid', 'fa-check')
      
     const deleteButton = document.createElement('button')
     deleteButton.classList.add('todo__item-delete')
 
     const trash = document.createElement('i')
-    trash.className.add('fa-solid fa-trash')
+    trash.classList.add('fa-solid', 'fa-trash')
         
     todoItem.appendChild(allButton)
     allButton.appendChild(acceptedButton)
